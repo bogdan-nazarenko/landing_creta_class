@@ -1,18 +1,25 @@
 @use './helpers/abstracts' as *;
 
+.lrn_slider {
+	width: 100%;
+	max-width: 116rem;
+	padding: 0 2rem;
+}
+
 .slider__item {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	width: 100%;
 	height: auto;
-	max-width: 35.8rem;
-	min-height: 35.2rem;
+	max-width: 35.2rem;
+	max-height: 35.8rem;
 	border-radius: 4rem;
-	padding: 2.8rem 3.2rem 2.8rem 1.4rem;
+	padding: 2.8rem 3.2rem 4.6rem 1.4rem;
 	background-color: #ddffbb;
 	font-family: $font_mukta;
 	font-weight: 700;
+	user-select: none;
 
 	&.slider--pink {
 		background-color: #fce4ec;

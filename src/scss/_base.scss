@@ -30,6 +30,7 @@ body {
 
 .section {
 	width: 100%;
+	padding: 8rem 0;
 }
 
 .container {
@@ -40,5 +41,34 @@ body {
 
 	&.container--v2 {
 		max-width: 133rem;
+	}
+}
+
+.sctn_head {
+	margin-bottom: 4rem;
+}
+
+.sctn__title {
+	font-family: $font_manrope;
+	font-weight: 800;
+	font-size: 4.8rem;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.sctn__descr {
+	font-family: $font_manrope;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 4rem;
+	color: #7b7b7b;
+	text-align: center;
+
+	&.descr--v2 {
+		font-family: $font_inter;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: normal;
+		color: currentColor;
 	}
 }
