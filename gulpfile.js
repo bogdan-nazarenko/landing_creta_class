@@ -45,15 +45,14 @@ async function fonts() {
 
 	// Convert only .ttf to .woff2
 	return src('src/fonts/**/*.ttf', { encoding: false })
-		.pipe(plumber({ errorHandler: notify.onError('Font Error: <%= error.message %>') }))
+		.pipe(plumber({ errorHandler: function () {} }))
 		.pipe(ttf2woff2())
 		.pipe(dest('app/fonts'));
 }
 
-
 function styles() {
 	return src(cfg.srcDir + 'scss/**/*.{scss,sass}', { sourcemaps: true })
-		.pipe(plumber({ errorHandler: notify.onError('Sass Error: <%= error.message %>') }))
+		.pipe(plumber({ errorHandler: function () {} }))
 		.pipe(
 			sass({
 				outputStyle: 'expanded', // expanded/compressed
@@ -91,7 +90,7 @@ function stylesMin() {
 
 function scripts() {
 	return src(cfg.srcDir + 'js/**/*.js')
-		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+		.pipe(plumber({ errorHandler: function () {} }))
 		.pipe(concat('script.min.js'))
 		.pipe(terser())
 		.pipe(dest(cfg.outputDir + 'js'))

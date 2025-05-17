@@ -33,8 +33,12 @@ body {
 }
 
 .container {
-	// max-width: 126rem;
+	max-width: 154rem;
 	width: 100%;
-
 	margin: 0 auto;
+	padding: 0 2rem;
+
+	&.container--v2 {
+		max-width: 133rem;
+	}
 }

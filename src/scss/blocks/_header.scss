@@ -9,6 +9,7 @@
 
 .header_block {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	width: 100%;
 	max-width: 151.6rem;
@@ -21,12 +22,12 @@
 	max-width: 65.2rem;
 }
 
-.creta_img {
-	height: 5.2rem;
+.creta__img {
 	width: 100%;
+	height: 5.2rem;
 	max-width: 25.6rem;
 
-	.creta_logo {
+	.creta__logo {
 		height: 100%;
 		width: 100%;
 		display: block;
@@ -42,7 +43,7 @@
 	height: auto;
 	max-width: 35rem;
 
-	.cookie_button {
+	.cookie__button {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -59,10 +60,10 @@
 		font-size: 1.7rem;
 		cursor: pointer;
 
-		&.green_dark {
+		&.green--dark {
 			color: #495340;
 		}
-		&.green_light {
+		&.green--light {
 			color: #326a00;
 		}
 
@@ -72,7 +73,7 @@
 			background-color: #2cc84d;
 		}
 
-		.btn_cookie {
+		.cookie__pic {
 			display: block;
 			margin-left: 0.8rem;
 			width: 1.8rem;
@@ -97,7 +98,7 @@
 	max-width: 25.4rem;
 	color: white;
 	background-color: #2cc84d;
-	border: 0.2rem solid green;
+	border: 0.2rem solid #009e00;
 	border-radius: 0.6rem;
 	box-shadow: 0 0.15rem 0.15rem 0 #9cffb180;
 	line-height: 100%;
@@ -113,7 +114,7 @@
 		background-color: transparent;
 	}
 
-	.btn_star {
+	.btn__star {
 		display: block;
 		margin-right: 1.2rem;
 		width: 1.8rem;
@@ -125,7 +126,7 @@
 		mask-position: center;
 	}
 
-	.btn_text {
+	.btn__text {
 		line-height: 100%;
 		.upper {
 			text-transform: uppercase;
