@@ -1,23 +1,43 @@
-/* Latin (English and German) */
 @font-face {
-	font-family: 'Montserrat';
-	src:
-		url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
-		url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-	font-weight: 400;
+	font-family: 'Nunito';
+	font-optical-sizing: auto;
+	font-weight: 900;
 	font-style: normal;
-	font-display: swap;
-	unicode-range: U+0000-00FF;
+	src: url(../fonts/Nunito-Black.ttf);
 }
 
-/* Cyrillic (Ukrainian) */
 @font-face {
-	font-family: 'Montserrat';
-	src:
-		url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
-		url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-	font-weight: 100 900;
+	font-family: 'Inter';
+	font-optical-sizing: auto;
+	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
-	unicode-range: U+0400-04FF, U+1E00-1EFF;
+	src: url(../fonts/Inter-Regular.ttf);
 }
+
+@font-face {
+	font-family: 'Inter';
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	src: url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	src: url(../fonts/Inter-Bold.ttf);
+}
+
+// @font-face {
+// 	src: url();
+// }

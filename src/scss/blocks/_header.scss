@@ -1,0 +1,134 @@
+@use './helpers/abstracts' as *;
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 12rem;
+}
+
+.header_block {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 151.6rem;
+}
+
+.header_elems {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 65.2rem;
+}
+
+.creta_img {
+	height: 5.2rem;
+	width: 100%;
+	max-width: 25.6rem;
+
+	.creta_logo {
+		height: 100%;
+		width: 100%;
+		display: block;
+		object-fit: contain;
+		object-position: center;
+	}
+}
+
+.cookie_btns {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	max-width: 35rem;
+
+	.cookie_button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 5.4rem;
+		width: 100%;
+		max-width: 16.2rem;
+		border: 0.2rem solid #2cc84d;
+		border-radius: 1.5rem;
+		line-height: 100%;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: $font_nunito;
+		font-weight: 900;
+		font-size: 1.7rem;
+		cursor: pointer;
+
+		&.green_dark {
+			color: #495340;
+		}
+		&.green_light {
+			color: #326a00;
+		}
+
+		&:hover,
+		&:active {
+			color: white;
+			background-color: #2cc84d;
+		}
+
+		.btn_cookie {
+			display: block;
+			margin-left: 0.8rem;
+			width: 1.8rem;
+			height: 1.8rem;
+			background-color: currentColor;
+			mask-image: url(../imgs/icons/cookie.svg);
+			mask-size: contain;
+			mask-repeat: no-repeat;
+			mask-position: center;
+		}
+	}
+}
+
+.header_button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	height: 5rem;
+	max-width: 25.4rem;
+	color: white;
+	background-color: #2cc84d;
+	border: 0.2rem solid green;
+	border-radius: 0.6rem;
+	box-shadow: 0 0.15rem 0.15rem 0 #9cffb180;
+	line-height: 100%;
+	text-decoration: none;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 2.2rem;
+	cursor: pointer;
+
+	&:hover,
+	&:active {
+		color: currentColor;
+		background-color: transparent;
+	}
+
+	.btn_star {
+		display: block;
+		margin-right: 1.2rem;
+		width: 1.8rem;
+		height: 1.8rem;
+		background-color: currentColor;
+		mask-image: url(../imgs/icons/star.svg);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-position: center;
+	}
+
+	.btn_text {
+		line-height: 100%;
+		.upper {
+			text-transform: uppercase;
+		}
+	}
+}
