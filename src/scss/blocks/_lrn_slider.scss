@@ -1,5 +1,63 @@
 @use './helpers/abstracts' as *;
 
+.slider_block {
+	position: relative;
+}
+
+.slider_block_w {
+	position: relative;
+	padding: 0 5rem;
+
+	.btn__slider--prev,
+	.btn__slider--next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 3.53rem;
+		height: 2rem;
+		background-color: #974e24;
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-position: center;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #2cc84d;
+		}
+	}
+
+	.btn__slider--prev {
+		left: 0;
+		mask-image: url(../imgs/icons/slider-arrow-prev.svg);
+	}
+
+	.btn__slider--next {
+		right: 0;
+		mask-image: url(../imgs/icons/slider-arrow-next.svg);
+	}
+}
+
+.slider__pag {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 2rem;
+	max-width: 11rem;
+	margin: 3.8rem auto 0;
+
+	.swiper-pagination-bullet {
+		width: 2rem;
+		height: 2rem;
+		background-color: transparent;
+		border: 0.2rem solid #974e24;
+		opacity: unset;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: #974e24;
+	}
+}
+
 .lrn_slider {
 	width: 100%;
 	max-width: 116rem;
