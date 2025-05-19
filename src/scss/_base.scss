@@ -34,13 +34,13 @@ body {
 }
 
 .container {
-	max-width: 154rem;
+	max-width: 156rem;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 2rem;
 
 	&.container--v2 {
-		max-width: 133rem;
+		max-width: 135rem;
 	}
 }
 
@@ -54,6 +54,10 @@ body {
 	font-size: 4.8rem;
 	text-align: center;
 	margin-bottom: 12px;
+
+	&.title--cap {
+		text-transform: capitalize;
+	}
 }
 
 .sctn__descr {

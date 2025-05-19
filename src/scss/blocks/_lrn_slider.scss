@@ -6,7 +6,7 @@
 
 .slider_block_w {
 	position: relative;
-	padding: 0 5rem;
+	padding: 0 2rem;
 
 	.btn__slider--prev,
 	.btn__slider--next {
@@ -27,12 +27,12 @@
 	}
 
 	.btn__slider--prev {
-		left: 0;
+		left: -1rem;
 		mask-image: url(../imgs/icons/slider-arrow-prev.svg);
 	}
 
 	.btn__slider--next {
-		right: 0;
+		right: -1rem;
 		mask-image: url(../imgs/icons/slider-arrow-next.svg);
 	}
 }
@@ -60,7 +60,7 @@
 
 .lrn_slider {
 	width: 100%;
-	max-width: 116rem;
+	max-width: 118rem;
 	padding: 0 2rem;
 }
 
@@ -71,7 +71,7 @@
 	width: 100%;
 	height: auto;
 	max-width: 35.2rem;
-	max-height: 35.8rem;
+	min-height: 35.8rem;
 	border-radius: 4rem;
 	padding: 2.8rem 3.2rem 4.6rem 1.4rem;
 	background-color: #ddffbb;
