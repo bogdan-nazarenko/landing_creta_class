@@ -1,2 +1,166 @@
 @use './helpers/abstracts' as *;
 
+.hero_block {
+	display: flex;
+	align-items: center;
+	column-gap: 15rem;
+	font-family: $font_inter;
+	font-weight: 700;
+}
+
+.hero_content {
+	width: 100%;
+	max-width: 67.9rem;
+}
+
+.hero_sup {
+	position: relative;
+	padding-top: 8rem;
+	width: 100%;
+	margin-bottom: 11.2rem;
+}
+
+.hero__title {
+	width: 100%;
+	max-width: 67.9rem;
+	font-size: 6.4rem;
+	line-height: 7rem;
+}
+
+.paper__plane {
+	position: absolute;
+	z-index: -1;
+	top: 1rem;
+	left: -18.8rem;
+	width: 100%;
+	height: 22rem;
+	max-width: 33rem;
+
+	.plane__pic {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: contain;
+		object-position: center;
+	}
+}
+
+.hero_form {
+	width: 100%;
+	max-width: 60rem;
+}
+
+.hero__form-title {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 3.2rem;
+}
+
+.hero_form_w {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.45rem;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.hero__label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 6rem;
+	width: 13.1rem;
+	border: 0.2rem solid #00000026;
+	border-bottom: 0.5rem solid #00000026;
+	border-radius: 0.8rem;
+	font-size: 2rem;
+	user-select: none;
+	cursor: pointer;
+
+	&:has(.hero__radio:checked) {
+		color: white;
+		background-color: #2cc84d;
+		transition: all 0.2s;
+	}
+
+	.hero__radio {
+		z-index: -1;
+		position: absolute;
+		appearance: none;
+	}
+}
+
+.btn__hero {
+	width: 100%;
+	height: 6.6rem;
+	max-width: 32.8rem;
+	border-radius: 0.9rem;
+	font-size: 1.8rem;
+	font-weight: inherit;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 100%;
+	color: white;
+	background: linear-gradient(110deg, #ff7b3a 70%, #ff7b3a96 80%, #ff7b3a 95%);
+	margin-bottom: 2rem;
+	cursor: pointer;
+
+	&:hover {
+		background: linear-gradient(110deg, #2cc84d 70%, #dfdfdf 80%, #2cc84d 95%);
+		background-color: #2cc84d;
+	}
+}
+
+.hero__form-discount,
+.hero__form-descr {
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+
+.hero__form-discount {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 25.7rem;
+	margin-bottom: 0.7rem;
+	color: #000000bf;
+
+	strong {
+		color: black;
+		font-weight: 700;
+		font-size: 3rem;
+	}
+
+	span {
+		color: #2cc84d;
+		font-weight: 700;
+	}
+}
+
+.hero__form-descr {
+	color: #00000080;
+
+	.hero__link {
+		font-weight: 700;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #ff7b3a;
+	}
+}
+
+.hero__image {
+	width: 100%;
+	height: 68.4rem;
+	max-width: 73.8rem;
+
+	.hero__pic {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: contain;
+		object-position: center;
+	}
+}
