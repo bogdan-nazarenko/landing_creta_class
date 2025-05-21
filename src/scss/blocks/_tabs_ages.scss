@@ -62,7 +62,7 @@
 
 		&::after {
 			left: 50%;
-			transition: left 0.2s;
+			transition: left 0.5s;
 		}
 	}
 }
@@ -79,25 +79,36 @@
 }
 
 .tab_contents {
+	position: relative;
 	width: inherit;
+	min-height: 68.3rem;
+	overflow: hidden;
 }
 
 .tab {
+	position: absolute;
+	z-index: -1;
 	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: inherit;
 	height: 0;
+	min-height: 0;
+	padding: 0;
+	border-radius: 17.6rem 2.64rem 2.64rem;
+	background: linear-gradient(-45deg, #ffdfdf, #fef5db);
+	transition: all 1s;
 
 	&.tab--show {
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
-		width: inherit;
-		height: auto;
-		min-height: 68.3rem;
-		padding: 1.5rem;
-		border-radius: 17.6rem 2.64rem 2.64rem;
-		background: linear-gradient(-45deg, #ffdfdf, #fef5db);
+		z-index: 1;
 		opacity: 1;
-		transition: all 1s;
+		min-height: inherit;
+		padding: 1.5rem;
+	}
+
+	&.auto--height {
+		height: auto;
 	}
 }
 

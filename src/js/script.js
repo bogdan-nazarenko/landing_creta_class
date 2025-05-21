@@ -26,9 +26,13 @@ supAll.forEach((elem, index) => {
 		if (!tabAll[index].classList.contains('tab--show')) {
 			tabAll.forEach(elem => {
 				elem.classList.remove('tab--show');
+				elem.classList.remove('auto--height');
 			});
 		}
 		supAll[index].classList.add('sup--active');
 		tabAll[index].classList.add('tab--show');
+		setTimeout(() => {
+			tabAll[index].classList.add('auto--height');
+		}, 1000);
 	});
 });
