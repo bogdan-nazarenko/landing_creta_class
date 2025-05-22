@@ -36,3 +36,24 @@ supAll.forEach((elem, index) => {
 		}, 1000);
 	});
 });
+
+const accrBtnAll = document.querySelectorAll('.accr__btn');
+const accrAll = document.querySelectorAll('.accr__text');
+
+accrBtnAll.forEach((elem, index) => {
+	elem.addEventListener('click', function () {
+		if (accrAll[index].classList.contains('accr--show')) {
+			accrBtnAll[index].classList.remove('btn--open');
+			accrAll[index].classList.remove('accr--show');
+		} else {
+			accrBtnAll.forEach(elem => {
+				elem.classList.remove('btn--open');
+			});
+			accrAll.forEach(elem => {
+				elem.classList.remove('accr--show');
+			});
+			accrBtnAll[index].classList.add('btn--open');
+			accrAll[index].classList.add('accr--show');
+		}
+	});
+});

@@ -1,0 +1,76 @@
+@use './helpers/abstracts' as *;
+
+.faqs_accrs {
+	font-family: $font_inter;
+	font-weight: 500;
+	font-size: 2.7rem;
+	color: #00000099;
+}
+
+.accr__item {
+	background-color: #f7f7fa;
+	border: 0.4rem solid #e2e4eb;
+	border-bottom: 0.82rem solid #e2e4eb;
+	border-radius: 3rem;
+	padding: 5rem 4rem;
+
+	&:not(:last-of-type) {
+		margin-bottom: 5rem;
+	}
+}
+
+.accr__sup {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.accr__title {
+	font-weight: 700;
+	color: black;
+}
+
+.accr__btn {
+	width: 3.4rem;
+	height: 1.66rem;
+	background-color: #00000099;
+	mask-image: url(../imgs/icons/accr-btn.svg);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	cursor: pointer;
+	transform: rotate(0deg);
+	transition: transform 0.5s;
+
+	&.btn--open {
+		transform: rotate(180deg);
+	}
+}
+
+.accr__text {
+	visibility: hidden;
+	overflow: hidden;
+	min-height: 0;
+	max-height: 0;
+	transition: all 0.5s;
+
+	&.accr--show {
+		visibility: visible;
+		min-height: 14.3rem;
+		max-height: 24.3rem;
+		padding-top: 1.6rem;
+	}
+}
+
+.accr__list-title {
+	color: #000000bf;
+	margin-bottom: 0.5rem;
+}
+
+.accr__list {
+	padding-left: 3.8rem;
+
+	li {
+		list-style: decimal;
+	}
+}
