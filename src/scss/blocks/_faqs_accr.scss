@@ -12,7 +12,6 @@
 	border: 0.4rem solid #e2e4eb;
 	border-bottom: 0.82rem solid #e2e4eb;
 	border-radius: 3rem;
-	padding: 5rem 4rem;
 
 	&:not(:last-of-type) {
 		margin-bottom: 5rem;
@@ -23,9 +22,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 4rem 5rem;
+	cursor: pointer;
 }
 
 .accr__title {
+	font-size: 3.3rem;
 	font-weight: 700;
 	color: black;
 }
@@ -38,7 +40,6 @@
 	mask-size: contain;
 	mask-repeat: no-repeat;
 	mask-position: center;
-	cursor: pointer;
 	transform: rotate(0deg);
 	transition: transform 0.5s;
 
@@ -48,17 +49,24 @@
 }
 
 .accr__text {
+	position: relative;
+	top: -4rem;
 	visibility: hidden;
 	overflow: hidden;
 	min-height: 0;
 	max-height: 0;
-	transition: all 0.5s;
+	padding-left: 5rem;
+	transition:
+		visibility 0.5s,
+		min-height 0.5s,
+		max-height 0.5s,
+		padding-top 0.5s;
 
 	&.accr--show {
 		visibility: visible;
 		min-height: 14.3rem;
 		max-height: 24.3rem;
-		padding-top: 1.6rem;
+		padding: 1.6rem 5rem 0;
 	}
 }
 

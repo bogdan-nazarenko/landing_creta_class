@@ -37,10 +37,11 @@ supAll.forEach((elem, index) => {
 	});
 });
 
+const accrSup = document.querySelectorAll('.accr__sup');
 const accrBtnAll = document.querySelectorAll('.accr__btn');
 const accrAll = document.querySelectorAll('.accr__text');
 
-accrBtnAll.forEach((elem, index) => {
+accrSup.forEach((elem, index) => {
 	elem.addEventListener('click', function () {
 		if (accrAll[index].classList.contains('accr--show')) {
 			accrBtnAll[index].classList.remove('btn--open');
