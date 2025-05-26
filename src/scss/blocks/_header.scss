@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 12rem;
-	box-shadow: 0 1rem 5rem 0 #0000000D;
+	box-shadow: 0 1rem 5rem 0 #0000000d;
 }
 
 .header_block {
@@ -45,34 +45,7 @@
 	max-width: 35rem;
 
 	.cookie__button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 5.4rem;
-		max-width: 16.2rem;
-		border: 0.2rem solid #2cc84d;
-		border-radius: 1.5rem;
-		line-height: 100%;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-family: $font_nunito;
-		font-weight: 900;
-		font-size: 1.7rem;
-		cursor: pointer;
-
-		&.green--dark {
-			color: #495340;
-		}
-		&.green--light {
-			color: #326a00;
-		}
-
-		&:hover,
-		&:active {
-			color: white;
-			background-color: #2cc84d;
-		}
+		@extend %btn_cookie;
 
 		.cookie__pic {
 			display: block;
@@ -89,31 +62,7 @@
 }
 
 .header_button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	white-space: nowrap;
-	width: 100%;
-	height: 5rem;
-	max-width: 25.4rem;
-	color: white;
-	background-color: #2cc84d;
-	border: 0.2rem solid #009e00;
-	border-radius: 0.6rem;
-	box-shadow: 0 0.15rem 0.15rem 0 #9cffb180;
-	line-height: 100%;
-	text-decoration: none;
-	font-family: 'Inter';
-	font-weight: 500;
-	font-size: 2.2rem;
-	cursor: pointer;
-
-	&:hover,
-	&:active {
-		color: currentColor;
-		background-color: transparent;
-	}
+	@extend %btn_green;
 
 	.btn__star {
 		display: block;
