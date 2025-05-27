@@ -46,15 +46,16 @@
 
 	.nav__email,
 	.nav__phone {
-		display: flex;
-		align-items: center;
 		width: 100%;
 		margin-bottom: 2rem;
-		text-decoration: none;
-		color: currentColor;
 
-		&:hover {
-			color: $color_orange;
+		a {
+			text-decoration: none;
+			color: currentColor;
+
+			&:hover {
+				color: $color_orange;
+			}
 		}
 	}
 
