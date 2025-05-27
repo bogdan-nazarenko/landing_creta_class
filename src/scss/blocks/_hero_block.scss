@@ -131,6 +131,10 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		color: #ff7b3a;
+
+		&:hover {
+			color: $color_lime;
+		}
 	}
 }
 
