@@ -43,18 +43,15 @@ const accrAll = document.querySelectorAll('.accr__text');
 
 accrSup.forEach((elem, index) => {
 	elem.addEventListener('click', function () {
-		if (accrAll[index].classList.contains('accr--show')) {
-			accrBtnAll[index].classList.remove('btn--open');
-			accrAll[index].classList.remove('accr--show');
-		} else {
+		if (!accrAll[index].classList.contains('accr--show')) {
 			accrBtnAll.forEach(elem => {
 				elem.classList.remove('btn--open');
 			});
 			accrAll.forEach(elem => {
 				elem.classList.remove('accr--show');
 			});
-			accrBtnAll[index].classList.add('btn--open');
-			accrAll[index].classList.add('accr--show');
 		}
+		accrBtnAll[index].classList.toggle('btn--open');
+		accrAll[index].classList.toggle('accr--show');
 	});
 });
