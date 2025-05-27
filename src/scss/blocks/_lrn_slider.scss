@@ -19,6 +19,7 @@
 		mask-size: contain;
 		mask-repeat: no-repeat;
 		mask-position: center;
+		mask-image: url(../imgs/icons/slider-arrow.svg);
 		cursor: pointer;
 
 		&:hover {
@@ -28,12 +29,13 @@
 
 	.btn__slider--prev {
 		left: -1rem;
-		mask-image: url(../imgs/icons/slider-arrow-prev.svg);
 	}
 
 	.btn__slider--next {
+		translate: 0 5%;
+		rotate: 180deg;
+		transform-origin: top;
 		right: -1rem;
-		mask-image: url(../imgs/icons/slider-arrow-next.svg);
 	}
 }
 
@@ -123,23 +125,24 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	left: 3.2rem;
+	padding-left: 3.2rem;
 	width: 100%;
 	max-width: 26.7rem;
-	row-gap: 2rem;
+	row-gap: 1rem;
 	font-size: 1.6rem;
 	line-height: 2rem;
 	color: green;
 
 	.list__itm {
 		position: relative;
+
 		&::before {
+			position: absolute;
 			content: '';
 			top: 0.4rem;
 			left: -2rem;
 			height: 1rem;
 			width: 1rem;
-			position: absolute;
 			background-color: green;
 		}
 	}
