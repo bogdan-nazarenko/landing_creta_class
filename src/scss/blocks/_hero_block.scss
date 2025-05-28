@@ -80,7 +80,7 @@
 
 	&:has(.hero__radio:checked) {
 		color: white;
-		background-color: #2cc84d;
+		background-color: $color_lime;
 		transition: all 0.2s;
 	}
 
@@ -118,7 +118,7 @@
 	}
 
 	span {
-		color: #2cc84d;
+		color: $color_lime;
 		font-weight: 700;
 	}
 }
@@ -130,7 +130,7 @@
 		font-weight: 700;
 		text-decoration: none;
 		text-transform: uppercase;
-		color: #ff7b3a;
+		color: $color_orange;
 
 		&:hover {
 			color: $color_lime;

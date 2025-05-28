@@ -15,7 +15,7 @@
 		transform: translateY(-50%);
 		width: 3.53rem;
 		height: 2rem;
-		background-color: #974e24;
+		background-color: $color_brown;
 		mask-size: contain;
 		mask-repeat: no-repeat;
 		mask-position: center;
@@ -23,7 +23,7 @@
 		cursor: pointer;
 
 		&:hover {
-			background-color: #2cc84d;
+			background-color: $color_lime;
 		}
 	}
 
@@ -52,11 +52,11 @@
 		width: 2rem;
 		height: 2rem;
 		background-color: transparent;
-		border: 0.2rem solid #974e24;
+		border: 0.2rem solid $color_brown;
 		opacity: unset;
 	}
 	.swiper-pagination-bullet-active {
-		background-color: #974e24;
+		background-color: $color_brown;
 	}
 }
 
@@ -82,13 +82,13 @@
 	user-select: none;
 
 	&.slider--pink {
-		background-color: #fce4ec;
+		background-color: $color_light-pink;
 	}
 	&.slider--beige {
-		background-color: #fff0cb;
+		background-color: $color_beige;
 	}
 	&.slider--blue {
-		background-color: #ebf2ff;
+		background-color: $color_blue;
 	}
 }
 

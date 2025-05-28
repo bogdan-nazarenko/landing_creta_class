@@ -26,13 +26,13 @@
 	text-align: center;
 	line-height: 100%;
 	color: white;
-	background: linear-gradient(110deg, #ff7b3a 70%, #ff7b3a96 80%, #ff7b3a 95%);
+	background: linear-gradient(110deg, $color_orange 70%, #ff7b3a96 80%, $color_orange 95%);
 	margin-bottom: 2rem;
 	cursor: pointer;
 
 	&:hover {
-		background: linear-gradient(110deg, #2cc84d 70%, #dfdfdf 80%, #2cc84d 95%);
-		background-color: #2cc84d;
+		background: linear-gradient(110deg, $color_lime 70%, #dfdfdf 80%, $color_lime 95%);
+		background-color: $color_lime;
 	}
 }
 
@@ -43,7 +43,7 @@
 	width: 100%;
 	height: 5.4rem;
 	max-width: 16.2rem;
-	border: 0.2rem solid #2cc84d;
+	border: 0.2rem solid $color_lime;
 	border-radius: 1.5rem;
 	line-height: 100%;
 	text-decoration: none;
@@ -63,7 +63,7 @@
 	&:hover,
 	&:active {
 		color: white;
-		background-color: #2cc84d;
+		background-color: $color_lime;
 	}
 }
 
@@ -77,11 +77,11 @@
 	height: 5rem;
 	max-width: 25.4rem;
 	color: white;
-	background-color: #2cc84d;
+	background-color: $color_lime;
 	border-radius: 0.6rem;
 	box-shadow:
 		0 0.3rem 0.75rem 0 #9cffb180,
-		0 0 0 0.15rem #2cc84d,
+		0 0 0 0.15rem $color_lime,
 		0 0.15rem 0.15rem 0 #00000024,
 		0 0.15rem 0 0 #9cffb1 inset;
 	line-height: 100%;
