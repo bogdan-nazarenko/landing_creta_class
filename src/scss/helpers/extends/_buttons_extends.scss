@@ -46,7 +46,7 @@
 	line-height: 100%;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: "Nunito";
+	font-family: 'Nunito';
 	font-weight: 900;
 	font-size: 1.7rem;
 	cursor: pointer;
@@ -76,9 +76,12 @@
 	max-width: 25.4rem;
 	color: white;
 	background-color: #2cc84d;
-	border: 0.2rem solid #009e00;
 	border-radius: 0.6rem;
-	box-shadow: 0 0.15rem 0.15rem 0 #9cffb180;
+	box-shadow:
+		0 0.3rem 0.75rem 0 #9cffb180,
+		0 0 0 0.15rem #2cc84d,
+		0 0.15rem 0.15rem 0 #00000024,
+		0 0.15rem 0 0 #9cffb1 inset;
 	line-height: 100%;
 	text-decoration: none;
 	font-family: 'Inter';
