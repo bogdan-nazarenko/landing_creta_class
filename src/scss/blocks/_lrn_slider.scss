@@ -105,11 +105,7 @@
 	max-width: 8.8rem;
 
 	.slider__pic {
-		height: 100%;
-		width: 100%;
-		display: block;
-		object-fit: contain;
-		object-position: center;
+		@extend %contain_img;
 	}
 }
 

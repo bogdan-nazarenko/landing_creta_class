@@ -118,11 +118,7 @@
 	max-width: 50.5rem;
 
 	.tab__pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-		object-fit: contain;
-		object-position: center;
+		@extend %contain_img;
 	}
 }
 
@@ -146,11 +142,7 @@
 	margin-right: 3rem;
 
 	.item__pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-		object-fit: contain;
-		object-position: center;
+		@extend %contain_img;
 	}
 }
 

@@ -37,11 +37,7 @@
 	max-width: 33rem;
 
 	.plane__pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-		object-fit: contain;
-		object-position: center;
+		@extend %contain_img;
 	}
 }
 
@@ -144,10 +140,6 @@
 	max-width: 73.8rem;
 
 	.hero__pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-		object-fit: contain;
-		object-position: center;
+		@extend %contain_img;
 	}
 }
