@@ -164,8 +164,8 @@
 			left: 5.6rem;
 			transform: rotate(1.5deg);
 
-			@include bp($point_5) {
-				left: 2rem;
+			@include bp($point_3) {
+				left: 1.5rem;
 			}
 			@include bp($point_6) {
 				left: 0;
@@ -177,8 +177,8 @@
 			left: 8.2rem;
 			transform: rotate(-1.5deg);
 
-			@include bp($point_5) {
-				left: 2rem;
+			@include bp($point_3) {
+				left: 1.5rem;
 			}
 			@include bp($point_6) {
 				left: 0;
@@ -192,8 +192,8 @@
 			left: 1.8rem;
 			transform: rotate(-3deg);
 
-			@include bp($point_5) {
-				left: 2rem;
+			@include bp($point_3) {
+				left: 1.5rem;
 			}
 			@include bp($point_6) {
 				left: 0;
@@ -205,8 +205,8 @@
 			left: 4.6rem;
 			transform: rotate(1.1deg);
 
-			@include bp($point_5) {
-				left: 2rem;
+			@include bp($point_3) {
+				left: 1.5rem;
 			}
 			@include bp($point_6) {
 				left: 0;
@@ -318,6 +318,13 @@
 					top: -1.7rem;
 					right: -2.7rem;
 				}
+
+				@include bp($point_3) {
+					margin-right: 8rem;
+				}
+				@include bp($point_5) {
+					margin-right: 0;
+				}
 			}
 		}
 	}
@@ -359,6 +366,9 @@
 					margin-bottom: 1.3rem;
 				}
 
+				@include bp($point_3) {
+					margin-right: 7.5rem;
+				}
 				@include bp($point_5) {
 					margin-right: 0;
 				}
