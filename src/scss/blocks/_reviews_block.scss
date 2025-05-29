@@ -159,7 +159,6 @@
 	}
 
 	&:nth-child(1) {
-	
 		&::before {
 			top: 1.5rem;
 			left: 5.6rem;
@@ -187,7 +186,6 @@
 		}
 
 		.rev__col {
-
 			&:nth-child(1) {
 				margin: 9.6rem 2rem 0 0;
 
@@ -203,6 +201,18 @@
 
 				.rev__text {
 					line-height: 1.59;
+				}
+
+				@include bp($point_6) {
+					&::before {
+						left: 1.5rem;
+					}
+
+					&::after {
+						left: 1.5rem;
+						bottom: -5.2rem;
+						rotate: -20deg;
+					}
 				}
 			}
 
@@ -225,12 +235,18 @@
 				@include bp($point_5) {
 					margin-right: 0;
 				}
+				@include bp($point_6) {
+					&::after {
+						top: -2.8rem;
+						right: -2rem;
+						rotate: -45deg;
+					}
+				}
 			}
 		}
 	}
 
 	&:nth-child(2) {
-
 		&::before {
 			top: 1.4rem;
 			left: 1.8rem;
@@ -258,7 +274,6 @@
 		}
 
 		.rev__col {
-
 			&:nth-child(1) {
 				margin: 9.6rem 2.2rem 0 0;
 
@@ -274,6 +289,18 @@
 
 				.rev__text {
 					line-height: 1.58;
+				}
+
+				@include bp($point_6) {
+					&::before {
+						left: 1.5rem;
+					}
+
+					&::after {
+						left: 1.5rem;
+						bottom: -5.2rem;
+						rotate: -20deg;
+					}
 				}
 			}
 
@@ -300,6 +327,13 @@
 				@include bp($point_5) {
 					margin-right: 0;
 				}
+				@include bp($point_6) {
+					&::after {
+						top: -2.8rem;
+						right: -2rem;
+						rotate: -45deg;
+					}
+				}
 			}
 		}
 	}
@@ -321,10 +355,6 @@
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-
-				@include bp($point_6) {
-					display: none;
-				}
 			}
 
 			&::after {
@@ -336,10 +366,6 @@
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-
-				@include bp($point_6) {
-					display: none;
-				}
 			}
 
 			@include bp($point_5) {
