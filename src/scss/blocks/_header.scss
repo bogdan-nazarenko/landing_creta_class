@@ -66,10 +66,17 @@
 			mask-position: center;
 		}
 	}
+
+	@include bp($point_5) {
+		display: none;
+	}
 }
 
 .header_button {
 	@extend %btn_green;
+	@include bp($point_3) {
+		display: none;
+	}
 
 	.btn__star {
 		display: block;
