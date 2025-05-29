@@ -75,6 +75,9 @@
 	@include bp($point_1) {
 		font-size: 2.5rem;
 	}
+	@include bp($point_6) {
+		font-size: 2rem;
+	}
 }
 
 .reviews_content {
