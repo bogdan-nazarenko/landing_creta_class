@@ -6,6 +6,13 @@
 	column-gap: 15rem;
 	font-family: $font_inter;
 	font-weight: 700;
+
+	@include bp($point_3) {
+		column-gap: 3rem;
+	}
+	@include bp($point_5) {
+		flex-direction: column;
+	}
 }
 
 .hero_content {
@@ -18,6 +25,10 @@
 	padding-top: 8rem;
 	width: 100%;
 	margin-bottom: 11.2rem;
+
+	@include bp($point_3) {
+		margin-bottom: 2rem;
+	}
 }
 
 .hero__title {
@@ -25,6 +36,11 @@
 	max-width: 67.9rem;
 	font-size: 6.4rem;
 	line-height: 7rem;
+
+	@include bp($point_3) {
+		font-size: 4rem;
+		line-height: 1.5;
+	}
 }
 
 .paper__plane {
@@ -38,6 +54,10 @@
 
 	.plane__pic {
 		@extend %contain_img;
+	}
+
+	@include bp($point_5) {
+		display: none;
 	}
 }
 
@@ -84,6 +104,12 @@
 		position: absolute;
 		opacity: 0;
 	}
+
+	@include bp($point_3) {
+		font-size: 1.5rem;
+		height: 4rem;
+		width: 10rem;
+	}
 }
 
 .btn__prime {
@@ -95,6 +121,10 @@
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: 1.8rem;
+
+	@include bp($point_3) {
+		font-size: 1.3rem;
+	}
 }
 
 .hero__form-discount {
@@ -110,11 +140,20 @@
 		color: black;
 		font-weight: 700;
 		font-size: 3rem;
+
+		@include bp($point_3) {
+			font-size: 1.5rem;
+		}
 	}
 
 	span {
 		color: $color_lime;
 		font-weight: 700;
+	}
+
+	@include bp($point_3) {
+		justify-content: unset;
+		gap: 0.5rem;
 	}
 }
 
@@ -140,5 +179,10 @@
 
 	.hero__pic {
 		@extend %contain_img;
+	}
+
+	@include bp($point_5) {
+		height: 30rem;
+		order: -1;
 	}
 }
