@@ -167,7 +167,12 @@
 			@include bp($point_3) {
 				left: 1.5rem;
 			}
+			@include bp($point_5) {
+				width: 90%;
+				left: 2.25rem;
+			}
 			@include bp($point_6) {
+				width: 100%;
 				left: 0;
 			}
 		}
@@ -180,7 +185,12 @@
 			@include bp($point_3) {
 				left: 1.5rem;
 			}
+			@include bp($point_5) {
+				width: 90%;
+				left: 2.25rem;
+			}
 			@include bp($point_6) {
+				width: 100%;
 				left: 0;
 			}
 		}
@@ -255,7 +265,12 @@
 			@include bp($point_3) {
 				left: 1.5rem;
 			}
+			@include bp($point_5) {
+				width: 90%;
+				left: 2.25rem;
+			}
 			@include bp($point_6) {
+				width: 100%;
 				left: 0;
 			}
 		}
@@ -268,7 +283,12 @@
 			@include bp($point_3) {
 				left: 1.5rem;
 			}
+			@include bp($point_5) {
+				width: 90%;
+				left: 2.25rem;
+			}
 			@include bp($point_6) {
+				width: 100%;
 				left: 0;
 			}
 		}
