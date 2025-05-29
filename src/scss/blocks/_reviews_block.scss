@@ -141,7 +141,7 @@
 		z-index: -2;
 		content: '';
 		width: 100%;
-		height: 32.4rem;
+		height: 32.6rem;
 		max-width: 52.7rem;
 		border: 2px dashed black;
 		border-radius: 1rem;
@@ -159,6 +159,7 @@
 	}
 
 	&:nth-child(1) {
+	
 		&::before {
 			top: 1.5rem;
 			left: 5.6rem;
@@ -184,9 +185,52 @@
 				left: 0;
 			}
 		}
+
+		.rev__col {
+
+			&:nth-child(1) {
+				margin: 9.6rem 2rem 0 0;
+
+				&::before {
+					top: -5.1rem;
+					left: -2.3rem;
+				}
+
+				&::after {
+					left: -2.8rem;
+					bottom: -4.4rem;
+				}
+
+				.rev__text {
+					line-height: 1.59;
+				}
+			}
+
+			&:nth-child(2) {
+				margin: 3.4rem 0 0 0;
+
+				&::before {
+					top: -3rem;
+					left: -0.8rem;
+				}
+
+				&::after {
+					top: -1.7rem;
+					right: -2.7rem;
+				}
+
+				@include bp($point_3) {
+					margin-right: 8rem;
+				}
+				@include bp($point_5) {
+					margin-right: 0;
+				}
+			}
+		}
 	}
 
 	&:nth-child(2) {
+
 		&::before {
 			top: 1.4rem;
 			left: 1.8rem;
@@ -210,6 +254,52 @@
 			}
 			@include bp($point_6) {
 				left: 0;
+			}
+		}
+
+		.rev__col {
+
+			&:nth-child(1) {
+				margin: 9.6rem 2.2rem 0 0;
+
+				&::before {
+					top: -6rem;
+					left: -2rem;
+				}
+
+				&::after {
+					left: -3.5rem;
+					bottom: -3.5rem;
+				}
+
+				.rev__text {
+					line-height: 1.58;
+				}
+			}
+
+			&:nth-child(2) {
+				margin: 3.8rem 3.3rem 0 0;
+
+				&::before {
+					top: -3rem;
+					left: -1.2rem;
+				}
+
+				&::after {
+					top: -1.1rem;
+					right: -3rem;
+				}
+
+				.rev__image {
+					margin-bottom: 1.3rem;
+				}
+
+				@include bp($point_3) {
+					margin-right: 7.5rem;
+				}
+				@include bp($point_5) {
+					margin-right: 0;
+				}
 			}
 		}
 	}
@@ -282,96 +372,6 @@
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-			}
-		}
-	}
-
-	&:nth-child(1) {
-		.rev__col {
-			&:nth-child(1) {
-				margin: 9.6rem 2rem 0 0;
-
-				&::before {
-					top: -5.1rem;
-					left: -2.3rem;
-				}
-
-				&::after {
-					left: -2.8rem;
-					bottom: -4.4rem;
-				}
-
-				.rev__text {
-					line-height: 1.59;
-				}
-			}
-
-			&:nth-child(2) {
-				margin: 3.4rem 0 0 0;
-
-				&::before {
-					top: -3rem;
-					left: -0.8rem;
-				}
-
-				&::after {
-					top: -1.7rem;
-					right: -2.7rem;
-				}
-
-				@include bp($point_3) {
-					margin-right: 8rem;
-				}
-				@include bp($point_5) {
-					margin-right: 0;
-				}
-			}
-		}
-	}
-
-	&:nth-child(2) {
-		.rev__col {
-			&:nth-child(1) {
-				margin: 9.6rem 2.2rem 0 0;
-
-				&::before {
-					top: -6rem;
-					left: -2rem;
-				}
-
-				&::after {
-					left: -3.5rem;
-					bottom: -3.5rem;
-				}
-
-				.rev__text {
-					line-height: 1.58;
-				}
-			}
-
-			&:nth-child(2) {
-				margin: 3.8rem 3.3rem 0 0;
-
-				&::before {
-					top: -3rem;
-					left: -1.2rem;
-				}
-
-				&::after {
-					top: -1.1rem;
-					right: -3rem;
-				}
-
-				.rev__image {
-					margin-bottom: 1.3rem;
-				}
-
-				@include bp($point_3) {
-					margin-right: 7.5rem;
-				}
-				@include bp($point_5) {
-					margin-right: 0;
-				}
 			}
 		}
 	}
