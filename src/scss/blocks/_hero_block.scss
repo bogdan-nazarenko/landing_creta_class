@@ -121,39 +121,27 @@
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: 1.8rem;
-
-	@include bp($point_3) {
-		font-size: 1.3rem;
-	}
 }
 
 .hero__form-discount {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	max-width: 25.7rem;
+	max-width: fit-content;
 	margin-bottom: 0.7rem;
 	color: $color_text;
 
 	strong {
+		vertical-align: middle;
 		color: black;
 		font-weight: 700;
 		font-size: 3rem;
-
-		@include bp($point_3) {
-			font-size: 1.5rem;
-		}
 	}
 
 	span {
-		color: $color_lime;
-		font-weight: 700;
-	}
+		vertical-align: middle;
 
-	@include bp($point_3) {
-		justify-content: unset;
-		gap: 0.5rem;
+		&:nth-of-type(2) {
+			color: $color_lime;
+			font-weight: 700;
+		}
 	}
 }
 
