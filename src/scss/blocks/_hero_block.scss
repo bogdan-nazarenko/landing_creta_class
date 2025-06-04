@@ -3,11 +3,13 @@
 .hero_block {
 	display: flex;
 	align-items: center;
-	column-gap: 15rem;
 	font-family: $font_inter;
 	font-weight: 700;
 
-	@include bp($point_3) {
+	@include bp($point_2, min) {
+		column-gap: 15rem;
+	}
+	@media (min-width: $point_8) and (max-width: $point_3) {
 		column-gap: 3rem;
 	}
 	@include bp($point_5) {
@@ -24,9 +26,12 @@
 	position: relative;
 	padding-top: 8rem;
 	width: 100%;
-	margin-bottom: 11.2rem;
 
-	@include bp($point_3) {
+	@include bp($point_4, min) {
+		margin-bottom: 11.2rem;
+	}
+
+	@include bp($point_5) {
 		margin-bottom: 2rem;
 	}
 }
@@ -34,9 +39,11 @@
 .hero__title {
 	width: 100%;
 	max-width: 67.9rem;
-	font-size: 6.4rem;
-	line-height: 7rem;
 
+	@include bp($point_4, min) {
+		font-size: 6.4rem;
+		line-height: 7rem;
+	}
 	@include bp($point_3) {
 		font-size: 4rem;
 		line-height: 1.5;
@@ -46,18 +53,26 @@
 .paper__plane {
 	position: absolute;
 	z-index: -1;
-	top: 1rem;
 	left: -18.8rem;
 	width: 100%;
 	height: 22rem;
 	max-width: 33rem;
 
-	.plane__pic {
-		@extend %contain_img;
+	@include bp($point_4, min) {
+		top: 1rem;
+	}
+	@media (min-width: $point_6) and (max-width: $point_5) {
+		top: -50rem;
+	}
+	@media (min-width: $point_7) and (max-width: $point_6) {
+		top: -43rem;
+	}
+	@include bp($point_7) {
+		top: -35rem;
 	}
 
-	@include bp($point_5) {
-		display: none;
+	.plane__pic {
+		@extend %contain_img;
 	}
 }
 
@@ -85,12 +100,9 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	height: 6rem;
-	width: 13.1rem;
 	border: 0.2rem solid #00000026;
 	border-bottom: 0.5rem solid #00000026;
 	border-radius: 0.8rem;
-	font-size: 2rem;
 	user-select: none;
 	cursor: pointer;
 
@@ -100,15 +112,20 @@
 		transition: all 0.2s;
 	}
 
+	@include bp($point_2, min) {
+		height: 6rem;
+		width: 13.1rem;
+		font-size: 2rem;
+	}
+	@include bp($point_3) {
+		height: 4rem;
+		width: 10rem;
+		font-size: 1.8rem;
+	}
+
 	.hero__radio {
 		position: absolute;
 		opacity: 0;
-	}
-
-	@include bp($point_3) {
-		font-size: 1.5rem;
-		height: 4rem;
-		width: 10rem;
 	}
 }
 
@@ -162,15 +179,17 @@
 
 .hero__image {
 	width: 100%;
-	height: 68.4rem;
 	max-width: 73.8rem;
+
+	@include bp($point_4, min) {
+		height: 68.4rem;
+	}
+	@include bp($point_5) {
+		height: unset;
+		order: -1;
+	}
 
 	.hero__pic {
 		@extend %contain_img;
-	}
-
-	@include bp($point_5) {
-		height: 30rem;
-		order: -1;
 	}
 }
