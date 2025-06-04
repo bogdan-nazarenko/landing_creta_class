@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../mixins/breakpoints' as *;
 
 @mixin st_btn {
 	display: inline-flex;
@@ -16,8 +17,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	height: 6.6rem;
+
 	max-width: 32.8rem;
 	border-radius: 0.9rem;
 	font-size: 1.8rem;
@@ -33,6 +33,17 @@
 	&:hover {
 		background: linear-gradient(110deg, $color_lime 70%, #dfdfdf 80%, $color_lime 95%);
 		background-color: $color_lime;
+	}
+
+	@include bp($point_4, min) {
+		width: 100%;
+		height: 6.6rem;
+		font-size: 1.8rem;
+	}
+	@include bp($point_5) {
+		width: 75%;
+		height: 5rem;
+		font-size: 1.6rem;
 	}
 }
 
