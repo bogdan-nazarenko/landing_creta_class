@@ -62,13 +62,10 @@
 		top: 1rem;
 	}
 	@media (min-width: $point_6) and (max-width: $point_5) {
-		top: -50rem;
+		top: -45rem;
 	}
-	@media (min-width: $point_7) and (max-width: $point_6) {
-		top: -43rem;
-	}
-	@include bp($point_7) {
-		top: -35rem;
+	@include bp($point_6) {
+		top: -32.5rem;
 	}
 
 	.plane__pic {
