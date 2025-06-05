@@ -52,17 +52,26 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 5.4rem;
-	max-width: 16.2rem;
 	border: 0.2rem solid $color_lime;
-	border-radius: 1.5rem;
 	line-height: 100%;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: $font_nunito;
 	font-weight: 900;
-	font-size: 1.7rem;
 	cursor: pointer;
+
+	@include bp($point_4, min) {
+		height: 5.4rem;
+		max-width: 16.2rem;
+		border-radius: 1.5rem;
+		font-size: 1.7rem;
+	}
+	@include bp($point_5) {
+		height: 4rem;
+		max-width: 6rem;
+		border-radius: 1rem;
+		font-size: 1.3rem;
+	}
 
 	&.green--dark {
 		color: #495340;
@@ -85,8 +94,8 @@
 	overflow: hidden;
 	white-space: nowrap;
 	width: 100%;
-	height: 5rem;
-	max-width: 25.4rem;
+
+	margin-left: 1.5rem;
 	color: white;
 	background-color: $color_lime;
 	border-radius: 0.6rem;
@@ -101,6 +110,15 @@
 	font-weight: 500;
 	font-size: 2.2rem;
 	cursor: pointer;
+
+	@include bp($point_4, min) {
+		height: 5rem;
+		max-width: 25.4rem;
+	}
+	@include bp($point_5) {
+		height: 3rem;
+		max-width: 3rem;
+	}
 
 	&:hover,
 	&:active {
