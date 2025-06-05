@@ -51,13 +51,15 @@
 	align-items: center;
 	height: auto;
 	max-width: 35rem;
+	column-gap: 1.5rem;
 
 	@include bp($point_4, min) {
 		justify-content: space-between;
 		width: 100%;
 	}
 	@include bp($point_5) {
-		column-gap: 1.5rem;
+		justify-content: flex-end;
+		width: 50%;
 	}
 
 	.cookie__button {
