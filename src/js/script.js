@@ -1,8 +1,4 @@
 const swiper = new Swiper('.swiper', {
-	slidesPerView: 3,
-	loop: true,
-	spaceBetween: 40,
-	slidesPerGroup: 3,
 	navigation: {
 		prevEl: '.btn__slider--prev',
 		nextEl: '.btn__slider--next',
@@ -10,6 +6,26 @@ const swiper = new Swiper('.swiper', {
 	pagination: {
 		el: '.slider__pag',
 		clickable: true,
+	},
+	breakpoints: {
+		1: {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+		},
+		768: {
+			loop: false,
+			spaceBetween: 40,
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+		},
+		1024: {
+			loop: true,
+			spaceBetween: 40,
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+		},
 	},
 });
 
