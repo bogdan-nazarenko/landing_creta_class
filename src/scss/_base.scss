@@ -31,7 +31,13 @@ body {
 
 .section {
 	width: 100%;
-	padding: 8rem 0;
+
+	@include bp($point_4, min) {
+		padding: 8rem 0;
+	}
+	@include bp($point_5) {
+		padding: 4rem 0;
+	}
 }
 
 .container {
