@@ -48,11 +48,17 @@
 
 .cookie_btns {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	height: auto;
 	max-width: 35rem;
+
+	@include bp($point_4, min) {
+		justify-content: space-between;
+		width: 100%;
+	}
+	@include bp($point_5) {
+		column-gap: 1.5rem;
+	}
 
 	.cookie__button {
 		@extend %btn_cookie;
@@ -67,6 +73,10 @@
 			mask-size: contain;
 			mask-repeat: no-repeat;
 			mask-position: center;
+
+			@include bp($point_5) {
+				display: none;
+			}
 		}
 	}
 }
@@ -76,7 +86,7 @@
 
 	.btn__star {
 		display: block;
-		margin-right: 1.2rem;
+
 		width: 1.8rem;
 		height: 1.8rem;
 		background-color: currentColor;
@@ -84,10 +94,19 @@
 		mask-size: contain;
 		mask-repeat: no-repeat;
 		mask-position: center;
+
+		@include bp($point_4, min) {
+			margin-right: 1.2rem;
+		}
 	}
 
 	.btn__text {
 		line-height: 100%;
+
+		@include bp($point_5) {
+			display: none;
+		}
+
 		.upper {
 			text-transform: uppercase;
 		}
