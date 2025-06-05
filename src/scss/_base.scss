@@ -52,9 +52,15 @@ body {
 .sctn__title {
 	font-family: $font_manrope;
 	font-weight: 800;
-	font-size: 4.8rem;
 	text-align: center;
 	margin-bottom: 12px;
+
+	@include bp($point_4, min) {
+		font-size: 4.8rem;
+	}
+	@include bp($point_5) {
+		font-size: 3rem;
+	}
 
 	&.title--cap {
 		text-transform: capitalize;
