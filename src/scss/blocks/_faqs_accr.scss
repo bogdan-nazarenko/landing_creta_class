@@ -20,8 +20,11 @@
 	border-radius: 3rem;
 
 	&:not(:last-of-type) {
-		@include bp($point_4, min) {
+		@include bp($point_2, min) {
 			margin-bottom: 5rem;
+		}
+		@media (min-width: $point_4) and (max-width: $point_3) {
+			margin-bottom: 3rem;
 		}
 		@include bp($point_5) {
 			margin-bottom: 2rem;
