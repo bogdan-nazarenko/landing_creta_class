@@ -137,7 +137,13 @@
 .hero__form-descr {
 	text-transform: capitalize;
 	font-weight: 500;
-	font-size: 1.8rem;
+
+	@include bp($point_4, min) {
+		font-size: 1.8rem;
+	}
+	@include bp($point_5) {
+		font-size: 1.3rem;
+	}
 }
 
 .hero__form-discount {
@@ -149,7 +155,13 @@
 		vertical-align: middle;
 		color: black;
 		font-weight: 700;
-		font-size: 3rem;
+
+		@include bp($point_4, min) {
+			font-size: 3rem;
+		}
+		@include bp($point_5) {
+			font-size: 2rem;
+		}
 	}
 
 	span {
