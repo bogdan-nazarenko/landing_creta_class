@@ -3,8 +3,14 @@
 .faqs_accrs {
 	font-family: $font_inter;
 	font-weight: 500;
-	font-size: 2.7rem;
 	color: #00000099;
+
+	@include bp($point_2, min) {
+		font-size: 2.7rem;
+	}
+	@include bp($point_3) {
+		font-size: 1.8rem;
+	}
 }
 
 .accr__item {
@@ -14,7 +20,12 @@
 	border-radius: 3rem;
 
 	&:not(:last-of-type) {
-		margin-bottom: 5rem;
+		@include bp($point_4, min) {
+			margin-bottom: 5rem;
+		}
+		@include bp($point_5) {
+			margin-bottom: 2rem;
+		}
 	}
 }
 
@@ -22,14 +33,33 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 4rem 5rem;
+	position: relative;
+	z-index: 1;
+	background-color: inherit;
+	border-radius: inherit;
 	cursor: pointer;
+
+	@include bp($point_2, min) {
+		padding: 4rem 5rem;
+	}
+	@include bp($point_3) {
+		padding: 2rem 3rem;
+	}
 }
 
 .accr__title {
-	font-size: 3.3rem;
 	font-weight: 700;
 	color: black;
+
+	@include bp($point_2, min) {
+		font-size: 3.3rem;
+	}
+	@media (min-width: $point_4) and (max-width: $point_3) {
+		font-size: 2.5rem;
+	}
+	@include bp($point_5) {
+		font-size: 1.8rem;
+	}
 }
 
 .accr__btn {
@@ -55,18 +85,39 @@
 	overflow: hidden;
 	min-height: 0;
 	max-height: 0;
-	padding: 0 5rem;
 	transition:
 		visibility 0.5s,
 		min-height 0.5s,
 		max-height 0.5s,
 		padding-top 0.5s;
 
+	@include bp($point_2, min) {
+		padding: 0 5rem;
+	}
+	@include bp($point_3) {
+		padding: 0 3rem;
+	}
+
 	&.accr--show {
 		visibility: visible;
-		min-height: 14.3rem;
-		max-height: 24.3rem;
-		padding-top: 1.6rem;
+
+		@include bp($point_2, min) {
+			min-height: 14.3rem;
+			max-height: 24.3rem;
+			padding-top: 1.6rem;
+		}
+
+		@media (min-width: $point_6) and (max-width: $point_3) {
+			min-height: 10.3rem;
+			max-height: 20.3rem;
+			padding-top: 3.6rem;
+		}
+
+		@include bp($point_6) {
+			min-height: 14.3rem;
+			max-height: 28.3rem;
+			padding-top: 3.6rem;
+		}
 	}
 }
 
