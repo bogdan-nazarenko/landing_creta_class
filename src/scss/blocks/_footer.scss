@@ -12,12 +12,19 @@
 
 .footer_block {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	column-gap: 2rem;
 	width: 100%;
 	height: 100%;
 	max-width: 151.6rem;
+
+	@include bp($point_4, min) {
+		align-items: center;
+	}
+	@include bp($point_5) {
+		flex-direction: column;
+		row-gap: 3rem;
+	}
 }
 
 .footer_part {
@@ -42,12 +49,10 @@
 	height: inherit;
 	max-width: 58rem;
 	font-weight: 400;
-	font-size: 2.2rem;
 
 	.nav__email,
 	.nav__phone {
 		width: 100%;
-		margin-bottom: 2rem;
 
 		a {
 			text-decoration: none;
@@ -57,11 +62,25 @@
 				color: $color_orange;
 			}
 		}
+
+		@include bp($point_4, min) {
+			margin-bottom: 2rem;
+		}
+		@include bp($point_5) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	.nav__location {
 		display: flex;
 		align-items: center;
 		line-height: 1.7;
+	}
+
+	@include bp($point_4, min) {
+		font-size: 2.2rem;
+	}
+	@include bp($point_5) {
+		font-size: 1.5rem;
 	}
 }
