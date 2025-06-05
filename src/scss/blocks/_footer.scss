@@ -40,6 +40,12 @@
 .footer__btn {
 	margin-bottom: unset;
 	text-decoration: none;
+
+	@media (min-width: $point_4) and (max-width: $point_3) {
+		width: 80%;
+		height: 5rem;
+		font-size: 1.3rem;
+	}
 }
 
 .footer_navs {
