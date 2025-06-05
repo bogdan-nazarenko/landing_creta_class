@@ -103,23 +103,21 @@
 
 	&.accr--show {
 		visibility: visible;
+		padding-top: 3.6rem;
 
 		@include bp($point_2, min) {
 			min-height: 14.3rem;
 			max-height: 24.3rem;
-			padding-top: 1.6rem;
 		}
 
 		@media (min-width: $point_6) and (max-width: $point_3) {
 			min-height: 10.3rem;
 			max-height: 20.3rem;
-			padding-top: 3.6rem;
 		}
 
 		@include bp($point_6) {
 			min-height: 14.3rem;
 			max-height: 28.3rem;
-			padding-top: 3.6rem;
 		}
 	}
 }
