@@ -75,15 +75,27 @@ body {
 	font-family: $font_manrope;
 	font-weight: 500;
 	font-size: 1.6rem;
-	line-height: 4rem;
 	color: #7b7b7b;
 	text-align: center;
+
+	@include bp($point_4, min) {
+		line-height: 4rem;
+	}
+	@include bp($point_5) {
+		line-height: 1.5;
+	}
 
 	&.descr--v2 {
 		font-family: $font_inter;
 		font-weight: 400;
-		font-size: 2rem;
 		line-height: normal;
 		color: currentColor;
+
+		@include bp($point_4, min) {
+			font-size: 2rem;
+		}
+		@include bp($point_5) {
+			font-size: 1.6rem;
+		}
 	}
 }
