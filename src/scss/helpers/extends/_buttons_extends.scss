@@ -65,11 +65,11 @@
 		font-size: 1.7rem;
 	}
 	@include bp($point_5) {
-		height: 4rem;
+		height: 3rem;
 		max-width: 8rem;
 		border-radius: 1rem;
 		padding: 0 0.5rem;
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 
 	&.green--dark {
@@ -115,8 +115,8 @@
 		max-width: 25.4rem;
 	}
 	@include bp($point_5) {
-		height: 4rem;
-		max-width: 4rem;
+		height: 3rem;
+		max-width: 3rem;
 	}
 
 	&:hover,
