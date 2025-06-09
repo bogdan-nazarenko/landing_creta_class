@@ -68,7 +68,7 @@ supAll.forEach((elem, index) => {
 const video = document.querySelector('.video');
 const play = document.querySelector('.media__play');
 
-play.addEventListener('click', () => {
+play.addEventListener('click', function () {
 	play.style.display = 'none';
 	video.setAttribute('autoplay', '');
 	video.setAttribute('controls', '');
