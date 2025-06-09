@@ -1,0 +1,120 @@
+@use './helpers/abstracts' as *;
+
+.media_block {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: -19rem;
+		right: -9rem;
+		content: '';
+		width: 18rem;
+		height: 18rem;
+		border-radius: 50%;
+		border: 3rem solid #e6e5fa;
+	}
+}
+
+.media {
+	position: absolute;
+	top: 1.8rem;
+	right: 30.1rem;
+	width: 100%;
+	height: 57.7rem;
+	max-width: 84.3rem;
+	border-radius: 2.5rem;
+	border: 0.1rem solid #0000001a;
+	border-bottom: 0.8rem solid #0000001a;
+	background-image: url(../imgs/media-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&::before {
+		position: absolute;
+		bottom: 4.4rem;
+		right: -16.45rem;
+		width: 15.3rem;
+		height: 12.2rem;
+		content: '';
+		background-image: url(../imgs/media-plane.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+	&:after {
+		position: absolute;
+		bottom: -17.7rem;
+		left: -0.8rem;
+		width: 22.7rem;
+		height: 12.2rem;
+		content: '';
+		background-image: url(../imgs/dots.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+
+	.media__play {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		width: 16.5rem;
+		height: 16.5rem;
+		cursor: pointer;
+		content: '';
+		background-image: url(../imgs/icons/play.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: height 0.2s;
+
+		&:active {
+			height: 12rem;
+		}
+	}
+}
+
+.media__image {
+	position: relative;
+	z-index: 1;
+	bottom: -10.3rem;
+	width: 100%;
+	height: 66.5rem;
+	max-width: 66.5rem;
+	margin-left: 7.6rem;
+
+	&::before {
+		position: absolute;
+		z-index: -1;
+		top: -31rem;
+		left: -10rem;
+		height: 98.5rem;
+		width: 59rem;
+		content: '';
+		background-image: url(../imgs/bg-2.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&::after {
+		position: absolute;
+		z-index: -2;
+		top: -32.5rem;
+		left: -15rem;
+		height: 98.5rem;
+		width: 60rem;
+		content: '';
+		background-image: url(../imgs/bg-1.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.media_pic {
+		@extend %contain_img;
+	}
+}
