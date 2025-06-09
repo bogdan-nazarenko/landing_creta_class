@@ -57,10 +57,11 @@ body {
 	}
 
 	&.container--v3 {
+		overflow: hidden;
 		max-width: unset;
 		padding: unset;
 		padding: 11.5rem 0;
-		background-color: #F6F6F6;
+		background-color: #f6f6f6;
 	}
 }
 
