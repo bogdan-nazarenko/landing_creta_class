@@ -55,6 +55,10 @@ body {
 	&.container--v2 {
 		max-width: 135rem;
 	}
+
+	&.container--v3 {
+		max-width: unset;
+	}
 }
 
 .sctn_head {
