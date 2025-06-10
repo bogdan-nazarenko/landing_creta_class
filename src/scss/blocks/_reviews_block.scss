@@ -175,6 +175,19 @@
 		max-width: 52.7rem;
 		border: 2px dashed black;
 		border-radius: 1rem;
+
+		@media (min-width: $point_4) and (max-width: $point_3) {
+			left: 1.5rem;
+			width: 100%;
+		}
+		@media (min-width: $point_6) and (max-width: $point_5) {
+			left: 2.25rem;
+			width: 90%;
+		}
+		@include bp($point_6) {
+			left: 0;
+			width: 100%;
+		}
 	}
 
 	&::after {
@@ -185,6 +198,20 @@
 		max-width: 52.7rem;
 		border-radius: 1rem;
 		background-color: $color_light-pink;
+
+		@media (min-width: $point_4) and (max-width: $point_3) {
+			top: 1rem;
+			left: 1.5rem;
+			width: 100%;
+		}
+		@media (min-width: $point_6) and (max-width: $point_4) {
+			left: 2.25rem;
+			width: 90%;
+		}
+		@include bp($point_6) {
+			left: 0;
+			width: 100%;
+		}
 	}
 
 	&:nth-child(1) {
@@ -196,18 +223,6 @@
 				left: 5.6rem;
 				width: 100%;
 			}
-			@media (min-width: $point_4) and (max-width: $point_3) {
-				left: 1.5rem;
-				width: 100%;
-			}
-			@media (min-width: $point_6) and (max-width: $point_5) {
-				left: 2.25rem;
-				width: 90%;
-			}
-			@include bp($point_6) {
-				left: 0;
-				width: 100%;
-			}
 		}
 
 		&:after {
@@ -216,19 +231,6 @@
 			@include bp($point_2, min) {
 				top: 2rem;
 				left: 8.2rem;
-				width: 100%;
-			}
-			@media (min-width: $point_4) and (max-width: $point_3) {
-				top: 1rem;
-				left: 1.5rem;
-				width: 100%;
-			}
-			@media (min-width: $point_6) and (max-width: $point_4) {
-				left: 2.25rem;
-				width: 90%;
-			}
-			@include bp($point_6) {
-				left: 0;
 				width: 100%;
 			}
 		}
@@ -306,18 +308,6 @@
 				left: 1.8rem;
 				width: 100%;
 			}
-			@media (min-width: $point_4) and (max-width: $point_3) {
-				left: 1.5rem;
-				width: 100%;
-			}
-			@media (min-width: $point_6) and (max-width: $point_5) {
-				left: 2.25rem;
-				width: 90%;
-			}
-			@include bp($point_6) {
-				width: 100%;
-				left: 0;
-			}
 		}
 
 		&:after {
@@ -327,18 +317,6 @@
 			@include bp($point_2, min) {
 				left: 4.6rem;
 				width: 100%;
-			}
-			@media (min-width: $point_4) and (max-width: $point_3) {
-				left: 1.5rem;
-				width: 100%;
-			}
-			@media (min-width: $point_6) and (max-width: $point_5) {
-				left: 2.25rem;
-				width: 90%;
-			}
-			@include bp($point_6) {
-				width: 100%;
-				left: 0;
 			}
 		}
 
