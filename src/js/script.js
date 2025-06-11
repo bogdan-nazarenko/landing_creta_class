@@ -66,14 +66,22 @@ supAll.forEach((elem, index) => {
 });
 
 const media = document.querySelector('.media');
-const video = document.querySelector('.video');
 const play = document.querySelector('.media__play');
+const video = document.querySelector('.video');
 
 function startVideo() {
 	play.style.display = 'none';
 	video.setAttribute('controls', '');
 	video.setAttribute('autoplay', '');
+	video.addEventListener('fullscreenchange', () => {
+		if (document.fullscreenElement) {
+			media.style.borderRadius = '0px';
+		} else {
+			media.removeAttribute('style');
+		}
+	});
 }
+
 media.addEventListener('click', startVideo);
 
 play.addEventListener('click', () => {
