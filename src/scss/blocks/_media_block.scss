@@ -12,36 +12,68 @@
 		height: 18rem;
 		border-radius: 50%;
 		border: 3rem solid #e6e5fa;
+
+		@include bp($point_3) {
+			display: none;
+		}
 	}
 }
 
 .media {
-	position: absolute;
 	z-index: 2;
-	top: 1.8rem;
-	right: 30.1rem;
-	width: 100%;
-	height: 57.7rem;
 	max-width: 84.3rem;
 	border-radius: 2.5rem;
 	border: 0.1rem solid #0000001a;
 	border-bottom: 0.8rem solid #0000001a;
+	background: linear-gradient(45deg, #feeadd, #fff3dccc, #ffbfbf);
 	background-image: url(../imgs/media-bg.png);
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
+	cursor: pointer;
+
+	@include bp($point_2, min) {
+		position: absolute;
+		top: 1.8rem;
+		right: 30.1rem;
+		width: 100%;
+		height: 57.6rem;
+		background-size: cover;
+	}
+	@include bp($point_3) {
+		position: relative;
+		margin: 0 auto;
+		width: 80%;
+	}
+	@media (min-width: $point_4) and (max-width: $point_3) {
+		height: 45rem;
+	}
+	@media (min-width: $point_6) and (max-width: $point_5) {
+		height: 35rem;
+	}
+	@include bp($point_6) {
+		height: 25rem;
+	}
 
 	&::before {
 		position: absolute;
-		bottom: 4.4rem;
-		right: -16.45rem;
-		width: 15.3rem;
-		height: 12.2rem;
 		content: '';
 		background-image: url(../imgs/media-plane.svg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: right;
+
+		@include bp($point_2, min) {
+			bottom: 4.4rem;
+			right: -16.45rem;
+			width: 15.3rem;
+			height: 12.2rem;
+		}
+		@include bp($point_3) {
+			top: -17.5rem;
+			right: -2rem;
+			width: 12rem;
+			height: 8rem;
+		}
 	}
 
 	&:after {
@@ -62,18 +94,32 @@
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
-		width: 16.5rem;
-		height: 16.5rem;
-		cursor: pointer;
 		content: '';
 		background-image: url(../imgs/icons/play.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
 		transition: height 0.2s;
+		cursor: pointer;
 
-		&:active {
-			height: 12rem;
+		@include bp($point_2, min) {
+			width: 16.5rem;
+			height: 16.5rem;
+		}
+		@include bp($point_3) {
+			width: 35%;
+			height: 35%;
+		}
+	}
+
+	&:active {
+		.media__play {
+			@include bp($point_2, min) {
+				height: 12rem;
+			}
+			@include bp($point_3) {
+				height: 20%;
+			}
 		}
 	}
 
@@ -93,6 +139,10 @@
 	height: 66.5rem;
 	max-width: 66.5rem;
 	margin-left: 7.6rem;
+
+	@include bp($point_3) {
+		display: none;
+	}
 
 	&::before {
 		position: absolute;
