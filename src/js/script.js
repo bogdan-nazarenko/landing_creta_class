@@ -65,13 +65,18 @@ supAll.forEach((elem, index) => {
 	});
 });
 
+const media = document.querySelector('.media');
 const video = document.querySelector('.video');
 const play = document.querySelector('.media__play');
 
-play.addEventListener('click', function () {
+function startVideo() {
 	play.style.display = 'none';
-	video.setAttribute('autoplay', '');
 	video.setAttribute('controls', '');
+	video.setAttribute('autoplay', '');
+}
+media.addEventListener('click', startVideo);
+
+play.addEventListener('click', () => {
 	video.play();
 });
 
