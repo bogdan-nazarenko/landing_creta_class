@@ -66,27 +66,15 @@ supAll.forEach((elem, index) => {
 });
 
 const media = document.querySelector('.media');
-const play = document.querySelector('.media__play');
-const video = document.querySelector('.video');
+const ytVideo = document.querySelector('.yt-video');
 
-function startVideo() {
-	play.style.display = 'none';
-	video.play();
-	setTimeout(() => {
-		video.setAttribute('controls', '');
-	}, 1);
-	video.addEventListener('fullscreenchange', () => {
-		if (document.fullscreenElement) {
-			media.style.borderRadius = 'initial';
-			video.style.objectFit = 'contain';
-		} else {
-			media.removeAttribute('style');
-			video.removeAttribute('style');
-		}
-	});
-}
-
-media.addEventListener('click', startVideo);
+ytVideo.addEventListener('fullscreenchange', () => {
+	if (document.fullscreenElement) {
+		media.style.borderRadius = 'initial';
+	} else {
+		media.removeAttribute('style');
+	}
+});
 
 const accrSup = document.querySelectorAll('.accr__sup');
 const accrBtnAll = document.querySelectorAll('.accr__btn');
