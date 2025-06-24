@@ -71,22 +71,22 @@ const video = document.querySelector('.video');
 
 function startVideo() {
 	play.style.display = 'none';
-	video.setAttribute('controls', '');
-	video.setAttribute('autoplay', '');
+	video.play();
+	setTimeout(() => {
+		video.setAttribute('controls', '');
+	}, 1);
 	video.addEventListener('fullscreenchange', () => {
 		if (document.fullscreenElement) {
-			media.style.borderRadius = '0px';
+			media.style.borderRadius = 'initial';
+			video.style.objectFit = 'contain';
 		} else {
 			media.removeAttribute('style');
+			video.removeAttribute('style');
 		}
 	});
 }
 
 media.addEventListener('click', startVideo);
-
-play.addEventListener('click', () => {
-	video.play();
-});
 
 const accrSup = document.querySelectorAll('.accr__sup');
 const accrBtnAll = document.querySelectorAll('.accr__btn');
