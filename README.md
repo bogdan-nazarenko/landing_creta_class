@@ -1,4 +1,4 @@
-# 📦 eveligora_gulp_5_template
+# 📦 bogdan_gulp_5_template
 
 A fast and simple Gulp 5+ starter template for frontend development.
 
@@ -79,6 +79,6 @@ This creates a clean build in the `/app/` folder with:
 
 ## 💻 Author
 
-Evgeniy Veligora
+Bogdan Nazarenko
 
-GitHub: [@eveligora](https://github.com/eveligora)
+GitHub: [@bogdan-nazarenko](https://github.com/bogdan-nazarenko)
