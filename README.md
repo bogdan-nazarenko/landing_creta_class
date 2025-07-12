@@ -1,20 +1,20 @@
-# 📦 bogdan_gulp_5_template
+# 📦 gulp_5_template
 
 A fast and simple Gulp 5+ starter template for frontend development.
 
 ## 🚀 Features
 
-- Gulp 5+ with ESModules and async/await
-- SCSS compilation with dart-sass
-- JS concatenation and minification
-- HTML file includes
-- Autoprefixer (browserslist: `> 1%, last 3 versions, not dead`)
-- Image optimization (JPEG, PNG, SVG)
-- Convert fonts .ttf to woff2
-- LiveReload via BrowserSync
-- HTML/SCSS/JS prettifying (Prettier)
-- Production build with minified HTML/CSS/JS/images
-- Error handling with plumber
+-   Gulp 5+ with ESModules and async/await
+-   SCSS compilation with dart-sass
+-   JS concatenation and minification
+-   HTML file includes
+-   Autoprefixer (browserslist: `> 1%, last 3 versions, not dead`)
+-   Image optimization (JPEG, PNG, SVG)
+-   Convert fonts .ttf to woff2
+-   LiveReload via BrowserSync
+-   HTML/SCSS/JS prettifying (Prettier)
+-   Production build with minified HTML/CSS/JS/images
+-   Error handling with plumber
 
 ---
 
@@ -51,10 +51,10 @@ gulp
 
 This will:
 
-- Compile SCSS
-- Concatenate and minify JS
-- Watch for changes
-- Launch a local dev server
+-   Compile SCSS
+-   Concatenate and minify JS
+-   Watch for changes
+-   Launch a local dev server
 
 4. **Format your source files**:
 
@@ -70,15 +70,7 @@ gulp build
 
 This creates a clean build in the `/app/` folder with:
 
-- Minified HTML
-- Minified CSS and JS
-- Optimized images
-- Converted fonts
-
----
-
-## 💻 Author
-
-Bogdan Nazarenko
-
-GitHub: [@bogdan-nazarenko](https://github.com/bogdan-nazarenko)
+-   Minified HTML
+-   Minified CSS and JS
+-   Optimized images
+-   Converted fonts
